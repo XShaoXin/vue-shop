@@ -15,3 +15,13 @@ node www
 cd D:\VSCode\vsCodeData\shop
 npm run dev
 
+### 项目图片
+![](/show/1.png)
+![](/show/2.png)
+![](/show/3.png)
+![](/show/4.png)
+![](/show/5.png)
+![](/show/6.png)
+![](/show/7.png)
+![](/show/8.png)
+![](/show/9.png)
