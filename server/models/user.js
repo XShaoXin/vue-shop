@@ -1,10 +1,8 @@
 let mongoose = require('mongoose')
 let Schema = mongoose.Schema
 let UserSchema = new Schema({
-    // "userId":String,
     "userName":String,
     "userPwd":String,
-    // "orderList":Array,
     "cartList":[
        {
         "productId":String,
@@ -15,6 +13,5 @@ let UserSchema = new Schema({
         "productNum":String
        }
     ],
-    // "addressList":Array
 })
 module.exports = mongoose.model("User",UserSchema)

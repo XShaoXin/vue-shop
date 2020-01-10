@@ -1,8 +1,8 @@
-let express = require('express');
+let express = require('express')
 let router = express.Router(); // 拿到express框架的路由
-let mongoose = require('mongoose');
 let Goods = require('../models/goods')
-// 链接MongoDB数据库
+let mongoose = require('mongoose')
+// 连接MongoDB数据库
 mongoose.connect('mongodb://127.0.0.1:27017/db_shop'); // 若是带账号密码的：'mongodb://root:123456@127.0.0.1:27017/dbName'
 
 // 连接成功操作

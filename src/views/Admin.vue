@@ -223,6 +223,7 @@ export default {
       // 发送和处理请求
       axios.get("/goods/goodslist").then(response => {
         let res = response.data;
+        //排序
         this.goodsList = res.result.sort(function(a, b) {
           // console.log(parseInt(a.productId))
           return a.productId - b.productId;
@@ -252,13 +253,13 @@ export default {
         .then(response => {
           let res = response.data;
           if (res.status == "0") {
-            // console.log("suc.msg", res);
-            this.adderrorTip = false; //关闭错误提示
-            this.addFlag = false; //关闭登录框
+            // console.log("suc.msg", res)
+            this.addErrorTip = false //关闭错误提示
+            this.addFlag = false //关闭登录框
             this.getGoodslist();
           } else {
             // console.log("err.msg", res);
-            this.adderrorTip = true; //打开错误提示
+            this.addErrorTip = true; //打开错误提示
           }
         });
     },

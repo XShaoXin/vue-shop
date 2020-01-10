@@ -31,7 +31,9 @@ app.use(function (req, res, next) {
     //所以如果要请求goods/list的话就不能用req.originalUrl == '/goods/list',因为这是个get请求，携带了page,pagesize,sort参数
     //但也可以用req.originalUrl.indexOf('/goods/list')>-1,判断里面有没有
     //path则不管参数，只管路径地址
-    if (req.originalUrl == '/users/login' || req.originalUrl == '/users/logout' || req.path == '/goods/list' || req.originalUrl == '/users/register' ) { //设置白名单|| req.path == '/'
+    if (req.originalUrl == '/users/login' || req.originalUrl == '/users/logout' 
+    || req.path == '/goods/list' || req.originalUrl == '/users/register' ) 
+    { //设置白名单|| req.path == '/'
       next()
     } else {
       res.json({
