@@ -12,7 +12,7 @@ cd D:\VSCode\vsCodeData\shop\server\bin
 node www
 
 ### 前端
-cd D:\VSCode\vsCodeData\shop
+cd D:\VSCode\vsCodeData\shop111
 npm run dev
 
 ### 项目图片
